@@ -40,11 +40,7 @@ services:
     staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
-        fromService:
-          name: sm-backend
-          type: web
-          property: host
-          format: https://{host}/api
+        sync: false
     routes:
       - type: rewrite
         source: /*

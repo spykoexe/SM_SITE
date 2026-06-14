@@ -54,6 +54,7 @@ services:
   - type: redis
     name: sm-redis
     plan: free
+    ipAllowList: []
 
 databases:
   # ── PostgreSQL ────────────────────────────────────────────

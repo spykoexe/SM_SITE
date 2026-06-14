@@ -1,7 +1,7 @@
 import type { Request, Response, NextFunction } from "express";
 import { UserRole } from "@prisma/client";
 
-const roleHierarchy: Record<UserRole, number> = {
+const roleHierarchy: Record<string, number> = {
   [UserRole.USER]: 1,
   [UserRole.PREMIUM]: 2,
   [UserRole.MODERATOR]: 3,
